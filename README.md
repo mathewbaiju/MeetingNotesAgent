@@ -34,25 +34,8 @@ Transform Zoom meeting recordings into professional meeting notes automatically 
 ### 🛠️ Technical Capabilities
 - **Zoom Integration**: Direct access to recording share URLs
 - **Multiple Formats**: Support for .vtt, .txt, .mp4, and other formats
-- **Temp File Management**: Organized storage and automatic cleanup
 - **MCP Server Support**: Extensible architecture for future integrations
 
-## 📁 Project Structure
-
-```
-MeetingNotesAgent/
-├── file_downloader.py           # Enhanced file downloader with temp support
-├── temp_file_manager.py         # Mac-optimized temp file management
-├── meeting_transcript_fetcher.py # Specialized transcript fetching
-├── example_usage.py             # Comprehensive usage examples
-├── requirements.txt             # Python dependencies
-├── README.md                    # This documentation
-├── Temp Files/                  # Local temp files directory
-│   ├── transcripts/            # Downloaded meeting transcripts
-│   ├── notes/                  # Generated meeting notes
-│   └── meeting_notes_template.md # Reusable AI prompt template
-└── .playwright-mcp/            # Browser automation files
-```
 
 ## 🛠️ Prerequisites
 
@@ -169,33 +152,6 @@ custom_sections = [
 - **GitHub MCP**: Code review meeting documentation
 - **Airtable MCP**: Meeting metrics and tracking
 
-## 🧪 Testing & Examples
-
-### Test with Sample Zoom URLs
-```bash
-# Test the complete workflow
-python3 -c "
-from meeting_transcript_fetcher import MeetingTranscriptFetcher
-fetcher = MeetingTranscriptFetcher()
-fetcher.get_temp_dir_info()
-"
-```
-
-### Running Examples
-```bash
-# Test temp file manager
-python3 temp_file_manager.py
-
-# Test file downloader
-python3 file_downloader.py https://httpbin.org/robots.txt --temp --type transcripts
-
-# Test meeting transcript fetcher
-python3 meeting_transcript_fetcher.py
-
-# Run comprehensive examples
-python3 example_usage.py
-```
-
 ## 🔮 Future Enhancements
 
 ### Planned Features
@@ -211,69 +167,6 @@ python3 example_usage.py
 - **Resource Allocation**: Suggest team member assignments
 - **Risk Scoring**: Automated risk assessment and prioritization
 
-## 🤝 Contributing
-
-### Development Workflow
-1. **Create feature branch:**
-   ```bash
-   git checkout -b feature-name
-   ```
-
-2. **Make changes and test:**
-   ```bash
-   python3 -m pytest  # If tests exist
-   python3 example_usage.py
-   ```
-
-3. **Commit changes:**
-   ```bash
-   git add .
-   git commit -m 'Add feature description'
-   ```
-
-4. **Push and create PR:**
-   ```bash
-   git push origin feature-name
-   # Create Pull Request on GitHub
-   ```
-
-### Code Style
-- Follow PEP 8 Python style guidelines
-- Use descriptive variable and function names
-- Include docstrings for all public methods
-- Add type hints where appropriate
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
-## 🆘 Support
-
-### Getting Help
-- **Issues**: Create an issue on GitHub for bugs or feature requests
-- **Documentation**: Check this README and inline code comments
-- **Examples**: Run `python3 example_usage.py` for working examples
-- **MCP Setup**: Ensure all required MCP servers are properly configured
-
-### System Requirements
-- **OS**: macOS (optimized), Linux/Windows (compatible)
-- **Python**: 3.8+ (recommended)
-- **Memory**: 100MB+ available RAM
-- **Storage**: 1GB+ available disk space for temp files
-- **Network**: Access to Zoom and Confluence services
-
-### Performance Notes
-- **Processing speed**: < 5 minutes for 1-hour meetings
-- **Temp storage**: Automatically managed with cleanup
-- **Memory usage**: Minimal for most operations
-- **Browser automation**: Optimized for Zoom recording access
-
----
-
-## 🎉 **Transform Your Meeting Documentation Today!**
-
-**From**: Manual note-taking and formatting  
-**To**: AI-powered automation with instant wiki creation
 
 **Built with ❤️ for Technical Program Managers who want to focus on strategy, not documentation**
 
