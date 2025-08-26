@@ -1,18 +1,11 @@
-# Core dependencies for MeetingNotesAgent
-requests>=2.31.0
-pathlib2>=2.3.7; python_version < "3.4"
+# MeetingNotesAgent - AI-Powered Meeting Notes Workflow
+# This is now a documentation repository showcasing the workflow concept
+# No Python dependencies required for the actual implementation
 
-# MCP Server Dependencies
-# Note: These are configured in your .cursor/mcp.json file
+# Note: The actual workflow uses MCP servers configured in Cursor IDE:
 # - Playwright MCP: @playwright/mcp@latest
 # - Confluence MCP: ghcr.io/sooperset/mcp-atlassian:latest
-# - Jira MCP: ghcr.io/sooperset/mcp-atlassian:latest
 
-# Enhanced file processing
-python-magic>=0.4.27  # For better file type detection
-mimetypes  # Built-in, but ensuring compatibility
-
-# Development and testing
-pytest>=7.0.0  # For testing
-black>=23.0.0  # Code formatting
-flake8>=6.0.0  # Linting
+# For reference only - these were the original Python dependencies
+# requests>=2.31.0
+# pathlib2>=2.3.7; python_version < "3.4"
