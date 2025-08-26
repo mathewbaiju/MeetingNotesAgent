@@ -1,4 +1,4 @@
-# 🤖 MeetingNotesAgent - AI-Powered Meeting Notes Workflow
+# MeetingNotesAgent
 
 ## 🎯 What This Repository Demonstrates
 
