@@ -64,9 +64,9 @@ MeetingNotesAgent/
 3 steps to execute. Here is the URL [PASTE_ZOOM_URL_HERE]
 Passcode: [PASTE_PASSCODE_HERE]
 
-- Using playwright MCP and Chrome browser, can you download the Audio Transcript file from to Temp Files folder
-- Summarize the transcript content to a readable Meeting notes with sections for Attendees, Date, Discussion Points and Action items. Also include a section for recording and include the URL I provided above in this section  
-- Output this meeting notes to a new wiki page in mathewba personal space
+- Using Playwright MCP, download the Audio Transcript file from to Temp Files folder
+- Summarize the transcript content to an easily readable Meeting notes with distinct sections for Attendees, Date, Discussion Points and Action items. Also include a section for recording and include the URL provided above in this section 
+- Output this meeting notes to a new wiki page in the personal space of mathewba
 ```
 
 ### Step 2: Customize for Your Meeting
