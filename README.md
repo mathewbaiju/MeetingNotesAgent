@@ -61,7 +61,7 @@ MeetingNotesAgent/
 
 ### Step 1: Copy the AI Prompt Template
 ```markdown
-3 steps to execute. Here is the URL [PASTE_ZOOM_URL_HERE]
+Here is the URL [PASTE_ZOOM_URL_HERE]
 Passcode: [PASTE_PASSCODE_HERE]
 
 - Using Playwright MCP, download the Audio Transcript file from to Temp Files folder
